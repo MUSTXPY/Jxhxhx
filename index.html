@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحَدث مع صديقك الذكاء الاصطناعي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chatbox">
+            <!-- سيتم تحميل الرسائل هنا -->
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="اكتب رسالة..." onkeypress="handleKeyPress(event)">
+            <button onclick="sendMessage()">&#10148;</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

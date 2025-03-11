@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* أسود */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* حاوية المحادثة */
+.chat-container {
+    width: 90%;
+    max-width: 400px;
+    background-color: #0a0f2b; /* أزرق غامق */
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.5);
+}
+
+/* صندوق المحادثة */
+.chat-box {
+    flex-grow: 1;
+    padding: 15px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: thin;
+}
+
+/* الرسائل */
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    max-width: 80%;
+}
+
+/* رسالة المستخدم */
+.user {
+    background-color: #007bff;
+    color: white;
+    align-self: flex-end;
+}
+
+/* رسالة الذكاء الاصطناعي */
+.bot {
+    background-color: #1c1f3f;
+    color: #cce7ff;
+    align-self: flex-start;
+}
+
+/* منطقة الإدخال */
+.input-area {
+    display: flex;
+    padding: 10px;
+    background-color: #0d1326;
+    border-top: 1px solid #1c1f3f;
+}
+
+/* إدخال النص */
+input {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1f3f;
+    color: white;
+    outline: none;
+}
+
+/* زر الإرسال */
+button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* تأثير التحميل */
+.loading {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
