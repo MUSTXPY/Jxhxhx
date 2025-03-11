@@ -1,96 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000; /* أسود */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
-
-/* حاوية المحادثة */
-.chat-container {
-    width: 90%;
-    max-width: 400px;
-    background-color: #0a0f2b; /* أزرق غامق */
-    border-radius: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0px 0px 10px rgba(0, 162, 255, 0.5);
-}
-
-/* صندوق المحادثة */
-.chat-box {
-    flex-grow: 1;
-    padding: 15px;
-    height: 400px;
+/* تكبير مساحة المحادثة */
+#chatbox {
+    width: 90%; /* كان أقل من ذلك، زودناه ليصبح أعرض */
+    max-width: 700px; /* حدود أقصى للعرض حتى لا يكون مبالغ فيه */
+    height: 80vh; /* كان أقل من ذلك، زودناه ليملأ الشاشة أكثر */
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    scrollbar-width: thin;
+    padding: 15px;
+    border-radius: 10px;
+    background: #0d1b2a; /* خلفية زرقاء داكنة */
+    color: white;
 }
 
-/* الرسائل */
+/* تحسين الرسائل */
 .message {
     padding: 10px;
-    margin: 5px;
     border-radius: 8px;
+    margin: 5px 0;
     max-width: 80%;
+    word-wrap: break-word;
 }
 
-/* رسالة المستخدم */
 .user {
-    background-color: #007bff;
-    color: white;
+    background: #1b263b;
     align-self: flex-end;
 }
 
-/* رسالة الذكاء الاصطناعي */
 .bot {
-    background-color: #1c1f3f;
-    color: #cce7ff;
-    align-self: flex-start;
+    background: #415a77;
 }
 
-/* منطقة الإدخال */
-.input-area {
-    display: flex;
+/* تنسيق الأكواد البرمجية */
+pre {
+    background: #0b132b;
+    color: #61dafb;
     padding: 10px;
-    background-color: #0d1326;
-    border-top: 1px solid #1c1f3f;
-}
-
-/* إدخال النص */
-input {
-    flex-grow: 1;
-    padding: 10px;
-    border: none;
     border-radius: 5px;
-    background-color: #1c1f3f;
-    color: white;
-    outline: none;
+    overflow-x: auto;
+    position: relative;
 }
 
-/* زر الإرسال */
-button {
-    background: #007bff;
-    border: none;
+/* زر النسخ */
+.copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #1b263b;
     color: white;
-    padding: 10px 15px;
+    border: none;
+    padding: 5px 8px;
     cursor: pointer;
-    border-radius: 5px;
-    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 4px;
 }
 
-button:hover {
-    background: #0056b3;
-}
-
-/* تأثير التحميل */
-.loading {
-    font-size: 14px;
-    color: #ccc;
-    margin-top: 5px;
+.copy-btn:hover {
+    background: #415a77;
 }
